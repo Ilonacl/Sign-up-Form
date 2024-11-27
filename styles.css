@@ -38,6 +38,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
 }
 
 .header {
@@ -46,10 +47,9 @@ body {
 
 h1,
 h2 {
-  color: #fff;
   text-align: center;
   font-family: "cabinSketchRegular", Arial, Helvetica, sans-serif;
-  /* font-family: var(--font-header, verdana); */
+  line-height: 3rem;
 }
 
 a {
@@ -68,7 +68,6 @@ input:invalid {
 
 .main-container > * {
   flex-grow: 1;
-  border: solid 1px #fff;
 }
 
 .left-container {
@@ -107,7 +106,6 @@ input:invalid {
 }
 
 .credits p {
-  color: #fff;
   padding: 1em;
 }
 
@@ -119,20 +117,20 @@ input:invalid {
 }
 
 form {
-  margin-top: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
 
 fieldset {
-  border: solid 1px #fff;
-  border-radius: 3px;
-  margin: 0 auto;
-  padding: 20px;
-  color: #fff;
-  align-self: center;
+  border: none;
+  padding: 35px 20px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  max-width: 650px;
+  max-width: 100%;
+  background-color: #0c3434;
 }
 
 .form-group {
@@ -151,4 +149,29 @@ label {
 input {
   flex: 2;
   padding: 5px;
+}
+
+button {
+  background-color: #d17a45;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(68, 25, 25, 0.2),
+    0 6px 20px 0 rgba(51, 13, 13, 0.19);
+}
+
+button:hover {
+  background-color: #e68552;
+}
+
+.login-link {
+  color: #d17a45;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #e68552;
 }
